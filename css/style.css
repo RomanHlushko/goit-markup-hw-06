@@ -198,9 +198,14 @@ img {
 .hero-button:focus {
   background-color: #404bbf;
 }
+
+/* <!----------------------------Section-2---------------------------------> */
+/* <!----------------------------Content----------------------------------> */
+
 .section-content {
   background-color: #fff;
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -217,32 +222,43 @@ img {
 }
 
 .section-content-list {
-  display: flex;
+  /* display: flex; */
   gap: 24px;
 }
 
 .section-content-list-item {
-  width: calc((100% - 72px) / 4);
+  /* width: calc((100% - 72px) / 4); */
+}
+
+.section-content-list-item:not(:last-child) {
+  margin-bottom: 72px;
 }
 
 .section-content-list-container {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   background-color: #f4f4fd;
   height: 112px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
+  display: none;
 }
 
 .section-content-list-header {
   color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
+  /* font-size: 20px; */
+  /* font-weight: 500; */
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  /*  */
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-transform: capitalize;
 }
 
 .section-content-list-paragraph {
@@ -869,17 +885,33 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 736px;
-    /* чи  потрібен падінг в контейнері? 
-    Через нього іконки розїжджаються. 
-    (36 рядок коду)*/
   }
 
+  .section-content-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .section-content-list-item {
+    width: calc((100% - 24px) / 2);
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .section-content-list > .section-content-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+    margin-bottom: 0;
+  }
+
+  .section-content-list-header {
+    text-align: start;
+  }
   .section-our-team-list {
     flex-direction: row;
     gap: 64px 24px;
-    /* padding: 0 108px; */
-    /* видалити падінг щоб вирівняти іконки */
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .section-our-team-item {
@@ -901,8 +933,45 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1142px;
+    width: 1158px;
+    padding: 0;
   }
+
+  .section-content {
+    padding: 120px 0;
+  }
+
+  .section-content-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .section-content-list-item {
+    width: calc((100% - 72px) / 4);
+    max-width: 264px;
+  }
+
+  .section-content-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    height: 112px;
+    margin-bottom: 8px;
+  }
+
+  .section-content-list-header {
+    color: #2e2f42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+
   .section-our-team {
     padding: 120px 0;
   }
