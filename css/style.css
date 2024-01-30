@@ -489,7 +489,7 @@ img {
 }
 
 .footer-div-two {
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 
 .footer-logo {
@@ -502,6 +502,7 @@ img {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 16px;
+  padding-left: 85px;
 }
 
 .studio {
@@ -524,6 +525,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-icon {
@@ -560,6 +563,9 @@ img {
 }
 
 .footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-name-subscribe {
@@ -611,11 +617,10 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: 16px; */
   cursor: pointer;
   border: none;
   min-width: 165px;
-  height: 40px;
+  margin: 0 auto;
 }
 .footer-subscribe-svg {
   color: #ffffff;
@@ -973,6 +978,39 @@ img {
   .section-portfolio-item {
     width: calc((100% - 24px) / 2);
   }
+
+  .footer {
+    padding: 96px 0;
+  }
+
+  .social-media {
+    display: flex;
+  }
+
+  .footer-div-one {
+    margin-right: 24px;
+  }
+  .footer-div-two {
+    /* margin-right: 80px; */
+  }
+
+  .footer-logo {
+    padding-left: 0;
+  }
+
+  .footer-subscribe-form {
+    /* display: flex; */
+    gap: 24px;
+  }
+
+  .footer-subscribe-btn {
+    margin: 16px;
+  }
+
+  .footer-subscribe {
+    align-items: flex-start;
+    margin-left: 108px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1060,5 +1098,56 @@ img {
 
   .section-portfolio-item {
     width: calc((100% - 48px) / 3);
+  }
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .social-media {
+    display: flex;
+  }
+
+  .footer-div-one {
+    margin-right: 120px;
+  }
+
+  .footer-div-two {
+    margin-right: 80px;
+  }
+
+  .footer-logo {
+    padding: 0;
+  }
+
+  .footer-paragraph {
+    margin-bottom: 0;
+  }
+
+  .footer-name-icon {
+    margin-bottom: 16px;
+  }
+
+  .footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 72px;
+  }
+
+  .footer-subscribe {
+    margin: 0;
+  }
+
+  .footer-subscribe-btn {
+    margin: 0;
+  }
+
+  .footer-subscribe-form {
+    display: flex;
+  }
+  .footer-subscribe-input {
+    margin-bottom: 0;
   }
 }
