@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-content">
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html"
@@ -56,19 +56,19 @@
           </svg>
         </button>
       </div>
-    </header> -->
+    </header>
     <main class="main">
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-name">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
       <!----------------------------Section-2--------------------------------->
       <!----------------------------Content---------------------------------->
 
-      <!-- <section class="section-content">
+      <section class="section-content">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="section-content-list">
@@ -122,12 +122,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!----------------------------Section-3--------------------------------->
       <!----------------------------Our-team---------------------------------->
 
-      <!-- <section class="section-our-team">
+      <section class="section-our-team">
         <div class="container">
           <h2 class="section-our-team-header">Our Team</h2>
           <ul class="section-our-team-list">
@@ -301,23 +301,46 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-------------------------------Section-4------------------------------->
       <!-------------------------------Portfolio------------------------------->
 
-      <!-- <section class="section-portfolio">
+      <section class="section-portfolio">
         <div class="container">
           <h2 class="section-portfolio-header">Our Portfolio</h2>
           <ul class="section-portfolio-list">
             <li class="section-portfolio-item">
               <div class="section-content-wrap">
-                <img
-                  src="./images/Banking-App.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Banking-App.jpg    1x,
+                      ./images/Banking-App-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Banking-App.jpg           1x,
+                      ./images/Banking-App-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Banking-App.jpg           1x,
+                      ./images/Banking-App-mobile-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/Banking-App-mobile-1x.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="section-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -331,12 +354,35 @@
             </li>
             <li class="section-portfolio-item">
               <div class="section-content-wrap">
-                <img
-                  src="./images/Cashless-Payment.jpg"
-                  alt="Cashless Payment Marketing"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Cashless-Payment.jpg    1x,
+                      ./images/Cashless-Payment-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Cashless-Payment.jpg           1x,
+                      ./images/Cashless-Payment-tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/Cashless-Payment.jpg           1x,
+                      ./images/Cashless-Payment-mobile-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/Cashless-Payment.jpg"
+                    alt="Cashless Payment Marketing"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="section-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -350,12 +396,32 @@
             </li>
             <li class="section-portfolio-item">
               <div class="section-content-wrap">
-                <img
-                  src="./images/Meditation-App.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/Meditation-App.jpg    1x,
+                      ./images/Meditation-App-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./images/Meditation-App.jpg           1x,
+                      ./images/Meditation-App-tablet-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./images/Meditation-App.jpg           1x,
+                      ./images/Meditation-App-mobile-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/Meditation-App.jpg"
+                    alt="Meditation App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="section-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -370,6 +436,10 @@
             <li class="section-portfolio-item">
               <div class="section-content-wrap">
                 <img
+                  srcset="
+                    ./images/Taxi-Service.jpg           1x,
+                    ./images/Taxi-Service-mobile-2x.jpg 2x
+                  "
                   src="./images/Taxi-Service.jpg"
                   alt="Taxi Service Marketing"
                   width="360"
@@ -389,6 +459,10 @@
             <li class="section-portfolio-item">
               <div class="section-content-wrap">
                 <img
+                  srcset="
+                    ./images/Screen-Illustrations.jpg           1x,
+                    ./images/Screen-Illustrations-mobile-2x.jpg 2x
+                  "
                   src="./images/Screen-Illustrations.jpg"
                   alt="Screen Illustrations Design"
                   width="360"
@@ -410,6 +484,10 @@
             <li class="section-portfolio-item">
               <div class="section-content-wrap">
                 <img
+                  srcset="
+                    ./images/Online-Courses.jpg           1x,
+                    ./images/Online-Courses-mobile-2x.jpg 2x
+                  "
                   src="./images/Online-Courses.jpg"
                   alt="Online Courses Marketing"
                   width="360"
@@ -428,7 +506,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-------------------------------Footer------------------------------->

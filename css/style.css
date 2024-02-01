@@ -129,8 +129,8 @@ img {
 }
 
 .address-menu-list {
-  /* display: flex;
-  gap: 40px; */
+  display: flex;
+  gap: 40px;
 }
 
 .address-menu-item {
@@ -161,18 +161,29 @@ img {
 
 .hero {
   position: relative;
-  padding: 188px 0;
+  /* padding: 188px 0; */
+  padding: 72px 16px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-mobile-2x.jpg);
 }
 
 .hero-name {
@@ -185,7 +196,8 @@ img {
   max-width: 496px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 72px;
 }
 
 .hero-button {
@@ -313,7 +325,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .section-our-team-photo {
@@ -486,10 +498,12 @@ img {
 
 .footer-div-one {
   margin-right: 120px;
+  margin-bottom: 72px;
 }
 
 .footer-div-two {
   /* margin-right: 80px; */
+  margin-bottom: 72px;
 }
 
 .footer-logo {
@@ -515,7 +529,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   width: 264px;
-  margin-bottom: 72px;
 }
 
 .footer-name-icon {
@@ -534,7 +547,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-bottom: 72px;
 }
 
 .footer-icon-list {
@@ -908,6 +920,11 @@ img {
     max-width: 768px;
   }
 
+  .header-content {
+    padding: 0 16px;
+    align-items: center;
+  }
+
   .header {
     /* padding-top: 25px;
     padding-bottom: 25px; */
@@ -915,11 +932,13 @@ img {
 
   .header-logo {
     margin-right: 120px;
+    padding: 25px 0;
   }
 
   .header-menu-list {
     display: flex;
     gap: 40px;
+    /* padding: 24px 0; */
   }
 
   .address {
@@ -934,6 +953,29 @@ img {
 
   .open-menu-btn {
     display: none;
+  }
+
+  .hero {
+    padding: 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tablet-2x.jpg);
+  }
+
+  .hero-container {
+    padding: 112px 16px;
   }
 
   .section-content-list {
@@ -985,13 +1027,16 @@ img {
 
   .social-media {
     display: flex;
+
+    width: 584px;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 
   .footer-div-one {
     margin-right: 24px;
   }
   .footer-div-two {
-    /* margin-right: 80px; */
   }
 
   .footer-logo {
@@ -999,24 +1044,27 @@ img {
   }
 
   .footer-subscribe-form {
-    /* display: flex; */
+    display: flex;
     gap: 24px;
   }
 
   .footer-subscribe-btn {
-    margin: 16px;
+    /* margin: 16px; */
   }
 
   .footer-subscribe {
     align-items: flex-start;
-    margin-left: 108px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0;
+  }
+
+  .header {
+    padding: 0 156px;
   }
 
   .header-logo {
@@ -1038,6 +1086,25 @@ img {
   .address-link {
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-2x.jpg);
   }
 
   .section-content {
@@ -1082,6 +1149,7 @@ img {
   .section-our-team-item {
     width: calc((100% - 72px) / 4);
   }
+
   .section-our-team-photo {
     margin: 0 auto;
   }
@@ -1106,10 +1174,13 @@ img {
 
   .social-media {
     display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
   }
 
   .footer-div-one {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .footer-div-two {
@@ -1133,7 +1204,6 @@ img {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    margin-bottom: 72px;
   }
 
   .footer-subscribe {
@@ -1147,6 +1217,7 @@ img {
   .footer-subscribe-form {
     display: flex;
   }
+
   .footer-subscribe-input {
     margin-bottom: 0;
   }
