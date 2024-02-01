@@ -325,7 +325,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .section-our-team-photo {
@@ -1027,7 +1027,6 @@ img {
 
   .social-media {
     display: flex;
-
     width: 584px;
     flex-wrap: wrap;
     align-items: baseline;
@@ -1177,6 +1176,9 @@ img {
     align-items: baseline;
     flex-wrap: nowrap;
   }
+  .social-media {
+    width: 1158px;
+  }
 
   .footer-div-one {
     margin-right: 120px;
@@ -1185,6 +1187,7 @@ img {
 
   .footer-div-two {
     margin-right: 80px;
+    margin-bottom: 0;
   }
 
   .footer-logo {
@@ -1197,6 +1200,7 @@ img {
 
   .footer-name-icon {
     margin-bottom: 16px;
+    justify-content: flex-start;
   }
 
   .footer-icon {
