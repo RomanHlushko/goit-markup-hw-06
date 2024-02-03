@@ -1321,4 +1321,13 @@ img {
   .footer-subscribe-input {
     margin-bottom: 0;
   }
+
+  .modal-checkbox-label {
+    margin-left: 0;
+  }
+
+  .modal-checkbox-span {
+    position: static;
+    margin-right: 8px;
+  }
 }
