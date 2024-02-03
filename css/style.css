@@ -211,6 +211,7 @@ img {
   text-transform: capitalize;
 }
 .mobail-address {
+  font-style: normal;
 }
 .mobail-address-menu-list {
   margin-bottom: 48px;
@@ -239,7 +240,7 @@ img {
 .hero {
   position: relative;
   /* padding: 188px 0; */
-  padding: 72px 16px;
+  padding: 72px 0;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -249,32 +250,32 @@ img {
   background-position: center;
   background-size: cover;
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 56px auto 0;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office-mobile-2x.jpg);
+  .hero-section-title {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-mobile-2x.jpg);
+    margin: 0;
+  }
 }
 
 .hero-name {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  max-width: 496px;
-  margin-right: auto;
-  margin-left: auto;
-  /* margin-bottom: 48px; */
-  margin-bottom: 72px;
+  text-transform: capitalize;
+  max-width: 216px;
+  margin: 0 auto 72px;
 }
 
 .hero-button {
@@ -575,7 +576,6 @@ img {
 }
 
 .footer-div-one {
-  margin-right: 120px;
   margin-bottom: 72px;
 }
 
@@ -594,7 +594,8 @@ img {
   text-transform: uppercase;
   display: inline-block;
   margin-bottom: 16px;
-  padding-left: 85px;
+  display: flex;
+  justify-content: center;
 }
 
 .studio {
@@ -922,8 +923,9 @@ img {
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
-  flex-direction: column;
-  margin-left: 24px;
+  /* flex-direction: column; */
+  /* margin-left: 24px; */
+  align-items: center;
 }
 
 .modal-checkbox-span {
@@ -941,10 +943,8 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  /* margin-right: 8px; */
-  position: absolute;
-  top: 493px;
-  left: 16px;
+  margin-right: 8px;
+  flex-shrink: 0;
 }
 
 .modal-checkbox-svg {
@@ -1049,20 +1049,32 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-tablet.jpg);
+    margin: 0 auto;
+    padding: 112px 0;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office-tablet-2x.jpg);
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tablet-2x.jpg);
+    }
   }
 
   .hero-container {
-    padding: 112px 16px;
+  }
+
+  .hero-name {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
   }
 
   .section-content-list {
@@ -1155,11 +1167,11 @@ img {
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-    padding: 0;
+    padding: 0 16px;
   }
 
   .header {
-    padding: 0 156px;
+    /* padding: 0 156px; */
   }
 
   .header-logo {
@@ -1195,11 +1207,13 @@ img {
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office-2x.jpg);
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
   }
 
   .section-content {
